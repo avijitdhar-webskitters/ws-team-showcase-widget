@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>AI Usage Report - WS Team Showcase Widget</title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2026-05-27T14:37:03.830330736"/>
+	<meta name="" content=""/>
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 21.59cm 27.94cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
+		p { color: #111827; font-family: "Arial", sans-serif; font-size: 11pt; line-height: 115%; margin-bottom: 0.25cm; background: transparent; background: transparent }
+		h1 { color: #0f172a; line-height: 150%; margin-bottom: 0.21cm; background: transparent; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 22pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 22pt; font-weight: bold }
+		h1.ctl { font-family: "Lohit Devanagari"; font-size: 22pt; font-weight: bold }
+		h2 { color: #0f172a; line-height: 150%; margin-top: 0.64cm; margin-bottom: 0.21cm; background: transparent; border-top: none; border-bottom: 1px solid #d1d5db; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.11cm; padding-left: 0cm; padding-right: 0cm; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Serif", serif; font-size: 16pt; font-weight: bold }
+		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 16pt; font-weight: bold }
+		h2.ctl { font-family: "Lohit Devanagari"; font-size: 16pt; font-weight: bold }
+		h3 { color: #0f172a; line-height: 150%; margin-top: 0.25cm; margin-bottom: 0.21cm; background: transparent; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Serif", serif; font-size: 13pt; font-weight: bold }
+		h3.cjk { font-family: "Noto Serif CJK SC"; font-size: 13pt; font-weight: bold }
+		h3.ctl { font-family: "Lohit Devanagari"; font-size: 13pt; font-weight: bold }
+		p.meta { color: #4b5563 }
+		td p { color: #111827; font-family: "Arial", sans-serif; font-size: 11pt; line-height: 150%; text-align: left; orphans: 0; widows: 0; background: transparent; background: transparent }
+		th p { color: #111827; font-family: "Arial", sans-serif; font-size: 11pt; font-weight: bold; line-height: 150%; text-align: left; orphans: 0; widows: 0; background: transparent; background: transparent }
+		code { font-family: "Consolas", monospace; background: #f3f4f6 }
+		strong { font-weight: bold }
+		a:link { color: #000080; text-decoration: underline }
+		a:visited { color: #800000; text-decoration: underline }
+	</style>
+</head>
+<body lang="en-IN" text="#111827" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
+AI Usage Report</h1>
+<p class="meta"><strong>Plugin:</strong> WS Team Showcase Widget
+-Avijit<br/>
+<strong>Plugin Slug:</strong>
+ws-team-showcase-widget-avijit<br/>
+<strong>Author:</strong> Avijit
+Dhar<br/>
+<strong>AI Tool Used:</strong> Codex<br/>
+<strong>Report
+Purpose:</strong> Compact stepwise summary of AI-assisted planning,
+implementation, debugging, and refinement for the Elementor team
+showcase plugin.</p>
+<h2 class="western">1. Objective</h2>
+<p>The objective was to create and update a custom WordPress
+Elementor widget named <strong>WS Team Showcase</strong>. The widget
+needed dynamic team member management, responsive cards, AJAX
+filtering, search, popup details, load-more pagination, ACF repeater
+integration, style controls, and backend-managed bonus features.</p>
+<h2 class="western">2. Required Feature Coverage</h2>
+<table cellpadding="2" cellspacing="2">
+	<tr>
+		<th style="border: none; padding: 0cm"><p>Feature</p>
+		</th>
+		<th style="border: none; padding: 0cm"><p>Implementation Summary</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Elementor Widget</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Created with OOP PHP
+			using Elementor <code>Widget_Base</code>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Manual Repeater</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added repeater fields for
+			name, designation, department, bio, image, social links,
+			experience, and CTA button data.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>ACF Integration</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added <code>Team
+			Showcases</code> custom post type and local ACF repeater field
+			group for reusable team data.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Data Source Switch</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added backend choice
+			between <code>Manual Repeater</code> and <code>ACF Repeater</code>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Responsive Grid</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added grid controls for
+			desktop, tablet, and mobile cards per row under <code>Grid
+			Settings</code>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>AJAX Filtering</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added nonce-protected
+			AJAX filtering by department and search query.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Search Filter</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added search input with
+			backend toggle, icon picker, and style controls.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Popup Modal</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Popup opens by clicking
+			team member image or title. The separate View Details button was
+			removed.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Load More AJAX</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Automatically appears
+			when more than 8 members exist. AJAX appends the next page of
+			members.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Lazy Loading</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Images use lazy loading
+			with backend toggle.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Skeleton Loader</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Skeleton loader added for
+			AJAX loading and made backend-manageable.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>GSAP Animation</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added optional GSAP
+			entrance animation controlled from the backend.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Dark Mode</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added backend dark mode
+			toggle and CSS overrides for cards, text, filters, and search
+			input.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Button Controls</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added Elementor-like
+			member button fields: type, text, link, icon, icon position, icon
+			spacing, and button ID.</p>
+		</td>
+	</tr>
+</table>
+<h2 class="western">3. Stepwise AI-Assisted Build Summary</h2>
+<h3 class="western">Step 1: Initial Plugin Review</h3>
+<p>The AI inspected the existing plugin folder and identified the
+main files: plugin bootstrap, Elementor widget class, AJAX handler,
+CSS, JS, and README. It confirmed the plugin already had a manual
+repeater, frontend card rendering, AJAX filtering, popup, and
+load-more basics.</p>
+<h3 class="western">Step 2: Custom Post Type and ACF Repeater</h3>
+<p>The AI added a new PHP class for post type and ACF registration. A
+<code>Team Showcases</code> custom post type was created, and an ACF
+local field group was registered with a main <code>Team Members</code>
+repeater and nested social links repeater.</p>
+<h3 class="western">Step 3: Elementor Data Source Switch</h3>
+<p>The widget was updated with a backend <code>Data Source</code>
+control. Admins can now choose between manual Elementor repeater data
+and an ACF-backed Team Showcase post.</p>
+<h3 class="western">Step 4: ACF Member Normalization</h3>
+<p>The AI implemented helper methods to normalize ACF fields into the
+same data structure used by the manual repeater. This allowed both
+data sources to share the same rendering, filtering, popup, and
+load-more logic.</p>
+<h3 class="western">Step 5: Runtime Fatal Error Fix</h3>
+<p>A fatal error occurred because the WordPress admin helper <code>hidden()</code>
+was used in an Elementor frontend render context. The AI replaced it
+with direct HTML attribute output.</p>
+<h3 class="western">Step 6: Skeleton Loader Display Fix</h3>
+<p>The skeleton loader appeared at the bottom even when hidden
+because CSS <code>display: grid</code> overrode the browser hidden
+behavior. The AI added <code>.ws-team-skeleton[hidden] { display:
+none; }</code>.</p>
+<h3 class="western">Step 7: Plugin Metadata Update</h3>
+<p>The plugin author name was changed from Webskitters to <strong>Avijit
+Dhar</strong>.</p>
+<h3 class="western">Step 8: Backend-Managed Bonus Features</h3>
+<p>The AI audited all bonus requirements and added backend controls
+for lazy loading, GSAP animation, skeleton loader, search filter,
+department filter, ACF integration, and dark mode.</p>
+<h3 class="western">Step 9: Load More AJAX Refinement</h3>
+<p>The load-more behavior was improved so it appends the next 8
+members instead of replacing the grid with all visible members.</p>
+<h3 class="western">Step 10: Cards Per Row Control</h3>
+<p>Because Elementor did not visibly show the first responsive
+control, the AI moved row count settings into a separate backend
+section named <code>Grid Settings</code>. It added desktop, tablet,
+and mobile cards-per-row controls and render-time scoped CSS for
+reliability.</p>
+<h3 class="western">Step 11: Image and Content Gap Fix</h3>
+<p>The AI adjusted card image CSS so the image fills its wrapper
+cleanly without unwanted spacing between the image and content area.</p>
+<h3 class="western">Step 12: Popup Trigger Update</h3>
+<p>The user requested removal of the View Details button. The AI
+updated the card markup and JavaScript so the popup opens when
+clicking the image or team member title.</p>
+<h3 class="western">Step 13: Search Bar Enhancement</h3>
+<p>The AI added a search icon inside the search field, a backend icon
+picker, and a complete <code>Style &gt; Search Bar</code> panel for
+width, colors, padding, border, radius, shadow, and icon size.</p>
+<h3 class="western">Step 14: Popup UI Fixes</h3>
+<p>The AI aligned the popup close button properly, added spacing
+above the popup CTA, and adjusted popup panel padding so content does
+not overlap with the close button.</p>
+<h3 class="western">Step 15: Title Hover Removal</h3>
+<p>After global button hover styles affected the clickable title, the
+AI locked title button styles with scoped CSS so hover, focus, and
+active states do not change color, background, underline, shadow, or
+movement.</p>
+<h3 class="western">Step 16: Button Editing Options</h3>
+<p>The AI added Elementor-style button controls inside each team
+member repeater item: button type, text, URL, icon, icon position,
+icon spacing, and button ID. It updated frontend, AJAX, and popup
+rendering to support these fields.</p>
+<h2 class="western">4. Main AI Prompts Used</h2>
+<table cellpadding="2" cellspacing="2">
+	<tr>
+		<th style="border: none; padding: 0cm"><p>Prompt / Request</p>
+		</th>
+		<th style="border: none; padding: 0cm"><p>AI Output Summary</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Create Elementor repeater
+			controls for a Team Showcase widget.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Generated repeater
+			structure for team member fields and CTA data.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Create secure WordPress
+			AJAX filtering using nonce verification.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Implemented <code>wp_ajax_*</code>,
+			<code>wp_ajax_nopriv_*</code>, nonce checks, sanitization,
+			filtering, and JSON response rendering.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Generate Elementor
+			responsive controls for grid columns.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added backend
+			cards-per-row controls and CSS variable-based responsive grid
+			output.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Create a post type and
+			ACF repeater accordingly and update the plugin.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added Team Showcases CPT,
+			ACF local field group, and Elementor ACF source selection.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Make sure all bonus
+			features are added and manageable from backend.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added backend controls
+			for lazy loading, GSAP, skeleton loader, search, filters, ACF
+			source, dark mode, and load more behavior.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Remove View Details
+			button and open popup from image/title.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Updated card markup and
+			JS event binding for image/title popup triggers.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Add search icon and
+			backend search bar styling.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added Elementor icon
+			picker and Search Bar style controls.</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none; padding: 0cm"><p>Add Elementor-like button
+			editing options.</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Added type, text, link,
+			icon, icon position, icon spacing, and button ID support.</p>
+		</td>
+	</tr>
+</table>
+<h2 class="western">5. Validation Performed</h2>
+<ul>
+	<li><p style="margin-bottom: 0cm">PHP syntax checks were run against
+	plugin PHP files after major changes. 
+	</p>
+	<li><p style="margin-bottom: 0cm">JavaScript syntax checks were run
+	with <code>node --check</code>. 
+	</p>
+	<li><p style="margin-bottom: 0cm">Frontend issues reported from
+	Elementor screenshots were fixed iteratively. 
+	</p>
+	<li><p>WordPress CLI bootstrap could not be used because the server
+	CLI PHP environment was missing the <code>mysqli</code> extension,
+	but standalone PHP linting passed. 
+	</p>
+</ul>
+<h2 class="western">6. Key Files Updated</h2>
+<ul>
+	<li><p style="margin-bottom: 0cm"><code>ws-team-showcase-widget.php</code>
+	- plugin metadata, asset registration, CPT class loading, activation
+	hooks. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><code>includes/class-ws-team-showcase-post-types.php</code>
+	- Team Showcases CPT and ACF local fields. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><code>includes/widgets/class-ws-team-showcase-widget.php</code>
+	- Elementor controls, data source selection, ACF normalization, grid
+	settings, search controls, button controls. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><code>includes/ajax/class-ws-team-showcase-ajax.php</code>
+	- AJAX filtering, load-more pagination, card rendering, CTA
+	rendering. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><code>assets/js/ws-team-showcase.js</code>
+	- AJAX state, search, load more, popup, GSAP animation, modal button
+	rendering. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><code>assets/css/ws-team-showcase.css</code>
+	- card layout, grid, search bar, dark mode, modal, skeleton loader,
+	title trigger, button icon styling. 
+	</p>
+	<li><p><code>README.md</code> - feature list, ACF workflow,
+	backend-managed bonus feature notes, and AI usage notes. 
+	</p>
+</ul>
+<h2 class="western">7. Final Backend Usage Summary</h2>
+<ul>
+	<li><p style="margin-bottom: 0cm"><strong>Team Members:</strong>
+	choose Manual Repeater or ACF Repeater source. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><strong>Grid Settings:</strong>
+	control desktop, tablet, and mobile cards per row. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><strong>Layout:</strong> control
+	alignment, image position, popup, filters, search, lazy loading,
+	skeleton loader, GSAP, and dark mode. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><strong>Style &gt; Card:</strong>
+	card background, border radius, border, shadow, hover effects. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><strong>Style &gt; Typography:</strong>
+	name and designation typography, text color. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><strong>Style &gt; Button Styling:</strong>
+	CTA button colors and radius. 
+	</p>
+	<li><p><strong>Style &gt; Search Bar:</strong> search width, colors,
+	icon size/color, padding, border, radius, and shadow. 
+	</p>
+</ul>
+<h2 class="western">8. Conclusion</h2>
+<p>The plugin was built and refined through AI-assisted development
+with human-directed feedback. The final widget supports dynamic team
+showcases through manual Elementor data or reusable ACF-backed Team
+Showcase posts, with secure AJAX filtering, modal details, backend
+style controls, responsive grid controls, and all requested bonus
+features.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><b>Screenshot:</b></p>
+<p><img src="AI-Usage-Report-avijit_doc_be77831ef0806c57.png" name="Image1" align="left" width="703" height="384" border="0"/>
+<img src="AI-Usage-Report-avijit_doc_f834a397807147ef.png" name="Image2" align="left" width="703" height="384" border="0"/>
+<img src="AI-Usage-Report-avijit_doc_fe6f309c2d4c2328.png" name="Image3" align="left" width="703" height="384" border="0"/>
+<img src="AI-Usage-Report-avijit_doc_21f1360c6e480f52.png" name="Image4" align="left" width="703" height="384" border="0"/>
+<br/>
+<br/>
+
+</p>
+</body>
+</html>
